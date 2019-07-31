@@ -14,7 +14,7 @@ describe('findC', () => {
 });
 
 /**
- * Note in real life we wouldn't be testing language methods or other libraries.
+ * Note in real life we wouldn't test language methods or other libraries.
  * This is just for illustration purposes.
  */
 describe('sum', () => {
@@ -88,7 +88,7 @@ describe('validateNum', () => {
     }).toThrow();
   });
 
-  it('should trow error when passing a NaN', () => {
+  it('should trow error when passing a string that could be evaluated', () => {
     const input = '1';
     expect(() => {
       validateNum(input);
