@@ -1,0 +1,26 @@
+{
+  "name": "pythagoras",
+  "version": "0.0.1",
+  "description": "pythagoras",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fesebuv/pythagoras.git"
+  },
+  "keywords": [
+    "theorem",
+    "and",
+    "tests"
+  ],
+  "author": "fesebuv",
+  "bugs": {
+    "url": "https://github.com/fesebuv/pythagoras/issues"
+  },
+  "homepage": "https://github.com/fesebuv/pythagoras#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
