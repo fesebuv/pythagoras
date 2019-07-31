@@ -14,7 +14,7 @@ describe('findC', () => {
 });
 
 /**
- * Note in real life we wouldn't be testing language methods or other libraries.
+ * Note in real life we wouldn't test language methods or other libraries.
  * This is just for illustration purposes.
  */
 describe('sum', () => {
