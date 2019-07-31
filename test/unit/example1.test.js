@@ -1,4 +1,5 @@
 const example1 = require('../../src/example1');
+const { findC } = example1;
 
 describe('findC', () => {
   /**
@@ -6,7 +7,6 @@ describe('findC', () => {
    */
   describe('when passing 3 and 4', () => {
     it('should return 5', () => {
-      const { findC } = example1;
       const c = findC(3, 4);
       expect(c).toEqual(5);
     });
