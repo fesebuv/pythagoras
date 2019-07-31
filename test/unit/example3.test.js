@@ -1,5 +1,5 @@
-const example2 = require('../../src/example2');
-const { findC, sqrNum, sqrRoot, sum } = example2;
+const example3 = require('../../src/example3');
+const { findC, sqrNum, sqrRoot, sum, validateNum } = example3;
 
 describe('findC', () => {
   /**
@@ -70,5 +70,28 @@ describe('sqrRoot', () => {
     const num = 9;
     const numSqrd = sqrNum(num);
     expect(num).toEqual(sqrRoot(numSqrd));
+  });
+});
+
+describe('validateNum', () => {
+  it('should trow error when passing a string', () => {
+    const input = 'word';
+    expect(() => {
+      validateNum('word');
+    }).toThrow();
+  });
+
+  it('should trow error when passing a NaN', () => {
+    const input = 'a' * 1;
+    expect(() => {
+      validateNum(input);
+    }).toThrow();
+  });
+
+  it('should trow error when passing a NaN', () => {
+    const input = '1';
+    expect(() => {
+      validateNum(input);
+    }).toThrow();
   });
 });
