@@ -3,7 +3,7 @@ const { findC, sqrNum, sqrRoot, sum } = example2;
 
 describe('findC', () => {
   /**
-   * Of the top of my head 3^2+4^2=5^2
+   * Off the top of my head 3^2+4^2=5^2
    */
   describe('when passing 3 and 4', () => {
     it('should return 5', () => {
@@ -22,7 +22,7 @@ describe('sum', () => {
     const num1 = 44869696887;
     const num2 = 898898899889;
 
-    const add = sum(num1,num2);
+    const add = sum(num1, num2);
     expect(add).toBeGreaterThan(num1);
   });
 
@@ -30,7 +30,7 @@ describe('sum', () => {
     const num1 = 44869696887;
     const num2 = 898898899889;
 
-    const add = sum(num1,num2);
+    const add = sum(num1, num2);
     expect(add).toBeGreaterThan(num2);
   });
 
@@ -38,16 +38,16 @@ describe('sum', () => {
     const num1 = 44869696887;
     const num2 = 898898899889;
 
-    const add = sum(num1,num2);
-    expect(add).toEqual(num2 + num1);
+    const add1 = sum(num1, num2);
+    const add2 = sum(num2, num1);
+    expect(add1).toEqual(add2);
   });
 
   it('adding by 0 should return the same number', () => {
-    const num1 = 44869696887;
-    const num2 = 0;
+    const num = 44869696887;
 
-    const add = sum(num1,num2);
-    expect(add).toEqual(num1);
+    const add = sum(num, 0);
+    expect(add).toEqual(num);
   });
 });
 

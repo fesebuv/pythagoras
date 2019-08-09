@@ -3,7 +3,7 @@
  * validateNum - validates input as valid numbers.
  *
  * @param  {Number} num input
- * @return {Number}  number or throws an error. 
+ * @return {Number}  number or throws an error.
  */
 function validateNum(num) {
   if (typeof num !== 'number' || isNaN(num)) {
@@ -49,7 +49,7 @@ function sqrRoot(num) {
  *
  * @param  {Number} a - first side of the triangle.
  * @param  {Number} b - second side of the triangle
- * @return {Number} - returns c the hypotenuse.
+ * @return {Number} - returns c, the hypotenuse.
  */
 function findC(a, b) {
   const numA = validateNum(a);
