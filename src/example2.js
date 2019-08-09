@@ -36,7 +36,7 @@ function sqrRoot(num) {
  *
  * @param  {Number} a - first side of the triangle.
  * @param  {Number} b - second side of the triangle
- * @return {Number} - returns c the hypotenuse.
+ * @return {Number} - returns c, the hypotenuse.
  */
 function findC(a, b) {
   const sumSqr = sum(sqrNum(a), sqrNum(b));

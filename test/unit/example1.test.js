@@ -3,7 +3,7 @@ const { findC } = example1;
 
 describe('findC', () => {
   /**
-   * Of the top of my head 3^2+4^2=5^2
+   * Off the top of my head 3^2+4^2=5^2
    */
   describe('when passing 3 and 4', () => {
     it('should return 5', () => {
